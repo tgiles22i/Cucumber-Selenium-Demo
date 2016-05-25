@@ -1,0 +1,23 @@
+Installing and Configuring Rubymine and Ruby
+
+All code written in these demonstrations was developed using Rubymine and Ruby.
+
+To install Ruby, visit RubyInstaller.com and visit their archives to install version 1.9.3 of Ruby (DO NOT INSTALL x64 AS NEDDED GEMS ARE NOT COMPATIBLE WITH VERSIONS ABOVE 1.9.3 OR x64). 
+http://rubyinstaller.org/downloads/archives
+
+To use Rubymine's debugger you will need to install the Ruby Development kit located on the right side of the archive page (DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe)
+
+After downloading the DevKit, unpack the zip file into the file path of Ruby 1.9.3 (example: C:\Ruby193\bin is where I put mine)
+
+In the command line, change directory to your ruby installation and run ruby dk.rb init to create config yml file
+
+Lastly run ruby dk.rb install to connect the dev kit to 1.9.3
+
+Needed Gems:
+Nokogiri
+Open-Uri
+Cucumber
+Watir
+Builder
+
+To install the above gems open command line and run gem install <gem name> (ex gem install Nokogiri)
